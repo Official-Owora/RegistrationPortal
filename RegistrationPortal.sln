@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationPortal.Domain", "RegistrationPortal.Domain\RegistrationPortal.Domain.csproj", "{436EB021-5F45-42D6-B5C9-F203AC3DECBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationPortal.Domain", "RegistrationPortal.Domain\RegistrationPortal.Domain.csproj", "{436EB021-5F45-42D6-B5C9-F203AC3DECBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationPortal.Application", "RegistrationPortal.Application\RegistrationPortal.Application.csproj", "{7604965E-84CD-4BD1-AA55-FD93A166ACBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationPortal.Application", "RegistrationPortal.Application\RegistrationPortal.Application.csproj", "{7604965E-84CD-4BD1-AA55-FD93A166ACBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationPortal.Infrastructure", "RegistrationPortal.Infrastructure\RegistrationPortal.Infrastructure.csproj", "{EEFB0D51-18E7-4175-8D69-16DF19535C60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationPortal.Infrastructure", "RegistrationPortal.Infrastructure\RegistrationPortal.Infrastructure.csproj", "{EEFB0D51-18E7-4175-8D69-16DF19535C60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationPortal.WebApi", "RegistrationPortal.WebApi\RegistrationPortal.WebApi.csproj", "{6CED560E-909F-417B-9F7C-8CB7F7C9C16C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistrationPortal.WebApi", "RegistrationPortal.WebApi\RegistrationPortal.WebApi.csproj", "{6CED560E-909F-417B-9F7C-8CB7F7C9C16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationPortal.Common", "RegistrationPortal.Common\RegistrationPortal.Common.csproj", "{C1363CE1-E062-4B64-968B-52BBFFA312BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6CED560E-909F-417B-9F7C-8CB7F7C9C16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CED560E-909F-417B-9F7C-8CB7F7C9C16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CED560E-909F-417B-9F7C-8CB7F7C9C16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1363CE1-E062-4B64-968B-52BBFFA312BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1363CE1-E062-4B64-968B-52BBFFA312BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1363CE1-E062-4B64-968B-52BBFFA312BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1363CE1-E062-4B64-968B-52BBFFA312BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
