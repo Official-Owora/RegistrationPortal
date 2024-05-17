@@ -26,7 +26,6 @@ namespace RegistrationPortal.Infrastructure.GenericRepository.RepositoryBase
             return trackChanges ? _context.Set<T>() :
                 _context.Set<T>().AsNoTracking();
         }
-
         public async Task CreateAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
@@ -35,7 +34,6 @@ namespace RegistrationPortal.Infrastructure.GenericRepository.RepositoryBase
         {
             await _context.Set<T>().AddRangeAsync(entity);
         }
-
         public Task UpdateManyAsync(IEnumerable<T> entities)
         {
             _context.Set<T>().UpdateRange(entities);
