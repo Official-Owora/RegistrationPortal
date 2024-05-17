@@ -5,7 +5,7 @@ namespace RegistrationPortal.Infrastructure.DataContext
 {
     public class ProgramAppDbContext : DbContext
     {
-        public ProgramAppDbContext(DbContextOptions<ProgramAppDbContext> contextOptions) : base(contextOptions)
+        public ProgramAppDbContext(DbContextOptions<ProgramAppDbContext> options) : base(options)
         {
         }
         public DbSet<CustomQuestion> CustomQuestions { get; set; }

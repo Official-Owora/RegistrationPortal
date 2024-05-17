@@ -1,8 +1,15 @@
+using RegistrationPortal.WebApi.ConfigureLogger;
+using RegistrationPortal.WebApi.Extension;
+using RegistrationPortal.WebApi.Middlewares;
+
+LogConfigurator.ConfigureLogger();
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.ConfigureDbContext(builder.Configuration);
+builder.Services.ResolveDependencyInjectionContainer();
+builder.Services.ConfigureAutoMapper();
+builder.Services.ConfigureController();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -15,7 +22,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+//Injecting middleware for global error handling
+app.ConfigureExceptionHandler();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

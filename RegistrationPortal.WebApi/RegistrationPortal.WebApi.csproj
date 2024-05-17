@@ -11,7 +11,24 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog" Version="5.3.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RegistrationPortal.Application\RegistrationPortal.Application.csproj" />
+    <ProjectReference Include="..\RegistrationPortal.Common\RegistrationPortal.Common.csproj" />
+    <ProjectReference Include="..\RegistrationPortal.Domain\RegistrationPortal.Domain.csproj" />
+    <ProjectReference Include="..\RegistrationPortal.Infrastructure\RegistrationPortal.Infrastructure.csproj" />
+    <ProjectReference Include="..\RegistrationPortal.Presentation\RegistrationPortal.Presentation.csproj" />
   </ItemGroup>
 
 </Project>
